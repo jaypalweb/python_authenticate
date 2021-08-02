@@ -3,7 +3,8 @@
 <h2 class="text-center">Login</h2>
 
 <div class="col-md-6 offset-md-3">
-    <form>
+    <form method="POST">
+        {% csrf_token %}
         <div class="form-group">
         <input type="text" name="username" class="form-control" placeholder="Enter Username">
         </div>
